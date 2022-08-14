@@ -1,0 +1,16 @@
+{
+
+    "PAGES":{
+        "HOME":"Anasayfa"
+   },
+   
+    "LOGIN":{
+        "MOBILE_ARNAV":"Mobile ARNAV",
+        "KULLANICI_ADI":"Kullanıcı Adi",
+        "SIFRE":"Şifre",
+        "GIRIS":"GİRİŞ",
+        "BENI_HATIRLA":"Beni Hatırla",
+        "KULLANICI_GIRIS_HATA":"KULLANICI GIRIS HATA"
+    }
+    
+}

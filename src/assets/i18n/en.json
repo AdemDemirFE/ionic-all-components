@@ -1,0 +1,90 @@
+{
+    "ANASAYFAA":"HOME",
+    "ARAMA":"Search",
+    "CANCEL":"Cancel",
+    
+    "GERI": "Back",
+    "BULUNAMADI": "Can not",
+    "LUTFEN_BEKLEYINIZ": "Plese wait..",
+    "HATA":"Error",
+
+    "ANASAYFA":{
+        "ANASAYFA":"Home",
+        "TUMU":"All",
+        "TARIH":"Date",
+        "GUNCEL_HABERLER":"The Latest News",
+        "BIRIMLER":"Units",
+        "AD_SOYAD":"Name Surname",
+        "BIRIM":"Unit",
+        "ID":"Id",
+        "KIMLIK_NO":"Identification number",
+        "KODU":"Code",
+        "KULLANICI_ADI":"Username"
+       
+    },
+    "LOGIN":{
+        "MOBILE_ARNAV":"Mobile ARNAV",
+        "KULLANICI_ADI":"Username",
+        "SIFRE":"Password",
+        "GIRIS":"Login",
+        "BENI_HATIRLA":"Remember Me",
+        "KULLANICI_GIRIS_HATA":"USER LOGIN ERROR"
+    },
+
+    "APP":{
+        "TURKIYE_CUMHURIYETI":"Türkiye Cumhuriyeti",
+        "SAGLIK_BAKANLIGI":"Saglik Bakanlıgı",
+        "GIRIS_YAP":"Login",
+        "HASTAHOME":"Home",
+        "ANASAYFA":"Home",
+        "RANDEVULARIM":"My appointments",
+        "BILGILERIM":"My profile",
+        "HABERLER":"News",
+        "DIL_DEGISTIR":"Change Language",
+        "TUM_BIRIMLER":"All Unity",
+        "NOBETCI_ECZANELER":"Pharmacies on Duty",
+        "CIKIS":"Logout"
+    },
+
+    "DIL_DEGISTIR":{
+        "DIL_DEGISTIR":"Change Language"
+    },
+
+    "HABERLER": {
+        "HABERLER":"News",
+        "DUYURULAR":"ANNOUNCEMENTS"
+    },
+
+    "TUM_BIRIMLER": {
+        "TUM_BIRIMLER":"All units",
+        "SERVER_BAGLANAMADI":"Error"
+    },
+    
+    "NOBETCI_ECZANELER":{
+        "NOBETCI_ECZANELER":"Pharmacies on Duty"
+    },
+
+    "HABER_DETAY":{
+        "HABER_DETAY":"Haber Detay"
+    },
+    
+    "HASTAHOME":{
+        "ANASAYFA":"HOME",
+        "BILGILERIM":"MY INFO",
+        "RANDEVULARIM":"MY APPOINTMENTS",
+        "ISLEMLERIM":"MY TRANSACTIONS",   
+        "ALANLAR":"MY AREAS"
+    },
+
+    "ISLEMLERIM":{
+        "ISLEMLERIM":"My Transactions"
+    },
+    "KARASUYU_KESFET":{
+        "COGRAFI_DURUMU":"Coğrafi Durumu",
+        "NUFUSU":"Nüfüsu",
+        "TARIHI":"Tarihi",
+        "FOTOGRAF_GALERISI":"Fotoğraf Galerisi"
+    }
+
+    
+}
