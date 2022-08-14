@@ -1,0 +1,11 @@
+{
+    "ANASAYFA":"ANASAYFA",
+    "ARAMA":"Arama",
+
+    "LOGIN":{
+        "MOBILE_ARNAV":"Mobile ARNAV",
+        "KULLANICI_ADI":"اسم المستخدم",
+        "SIFRE":"كلمة السر",
+        "GIRIS":"تسجيل الدخول"
+    }
+}
