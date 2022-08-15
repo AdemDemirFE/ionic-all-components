@@ -1,9 +1,16 @@
 {
 
     "PAGES":{
-        "HOME":"Anasayfa"
+        "HOME":"Anasayfa",
+        "SEGMENT_BUTTON":"Segment Button"
    },
    
+   "SEGMENT":{
+    "SEGMENT1":"Segment Button 1",
+    "SEGMENT2":"Segment Button 2",
+    "SEGMENT3":"Segment Button 3"
+
+   },
     "LOGIN":{
         "MOBILE_ARNAV":"Mobile ARNAV",
         "KULLANICI_ADI":"Kullanıcı Adi",

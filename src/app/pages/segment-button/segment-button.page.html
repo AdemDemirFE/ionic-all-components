@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar style="--background: #3897E9; text-align: center;" >
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu" style="color:white" ></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="text-align: center;">
+      <a style="color: white;  font-size: 15px;">{{'PAGES.SEGMENT_BUTTON' | translate}}</a>
+    </ion-title>
+  </ion-toolbar>
+
+  <ion-segment scrollable mode="md" [(ngModel)]="segment" color="success">
+    <ion-segment-button mode="md" value="1">
+      <p>{{'SEGMENT.SEGMENT1' | translate}}</p>
+    </ion-segment-button>
+    <ion-segment-button mode="md" value="2">
+      <p>{{'SEGMENT.SEGMENT2' | translate}}</p>
+    </ion-segment-button>
+    <ion-segment-button mode="md" value="2">
+      <p>{{'SEGMENT.SEGMENT3' | translate}}</p>
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+  <ion-grid *ngIf="segment == '1'">
+    <p>{{'SEGMENT.SEGMENT1' | translate}}</p>
+  </ion-grid>
+
+  <ion-grid *ngIf="segment == '2'">
+    <p>{{'SEGMENT.SEGMENT2' | translate}}</p>
+  </ion-grid>
+
+  
+  <ion-grid *ngIf="segment == '3'">
+    <p>{{'SEGMENT.SEGMENT3' | translate}}</p>
+  </ion-grid>
+
+</ion-content>

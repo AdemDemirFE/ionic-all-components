@@ -28,6 +28,11 @@ export class AppComponent {
       icon: 'home'
     },
     {
+      name: 'Segment Button',
+      url: '/segment-button',
+      icon: 'home'
+    },
+    {
       name: 'Login',
       url: '/login',
       icon: 'person'
