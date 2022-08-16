@@ -1,0 +1,79 @@
+.infoHeader{
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    max-height: 700px;
+    min-height: 200px;
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+}
+
+.infoContent{
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+ 
+.infoHeaderDetail{
+    color: #B4BCBA;
+    font: 14px;
+}
+
+.infoHeaderDetailExplanation{
+    color: #111111;
+    font: 18px;
+    margin-right: 10px;
+}
+
+.info{
+    display: flex; justify-content: space-between;
+}
+
+.patient-info-col{
+    display:flex; flex-direction: column;
+}
+
+
+
+$image-size: 120px;
+
+ion-content {
+    --background: linear-gradient(0deg,#FFFFFF, #a1a6fa 165%);
+}
+
+.bg-secondary {
+    background: linear-gradient(rgb(27, 138, 110), rgb(21, 105, 136) 195%);
+    border-bottom-left-radius:  180px;
+    border-bottom-right-radius:  180px;    
+}
+
+.empty {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.image-round {
+    background-color: #CECECE;
+    border: 2px solid #FAFAFA;
+    border-radius: 50%;
+    display: block;
+    height: $image-size;
+    margin: 0 auto;
+    width: $image-size;
+}
+.image-over-div {
+    margin-top: -($image-size/ 2);
+}
+
+.vertical-padding {
+    padding-bottom: 15px;
+    padding-top: 15px
+}

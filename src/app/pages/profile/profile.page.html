@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar style="--background: #3897E9; text-align: center;" >
+    <ion-buttons slot="start">
+      <ion-back-button text="{{'BACK' | translate}}" style="color: rgb(255, 255, 255);"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="color: white;">{{'PAGES.PROFILE' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="infoHeader ">
+
+    <div class="empty bg-secondary"></div>
+    <div class="ion-text-center image-over-div">
+      <img src="./assets/img/profil_avatar.png" alt="" class="image-round border-white">
+    </div>
+
+    <div class="ion-text-center">
+      <h4>{{ 'PROFILE.NAMESURNAME' | translate }}</h4>
+      <!-- <p class="text-profile">
+        birim
+      </p> -->
+    </div>
+
+    <ion-item >
+      <h6 class="patient-name">{{ 'PROFILE.FIRST_NAME' | translate }}</h6>
+      <h6 class="patient-name" slot="end">ANGEL</h6>
+    </ion-item>
+    <ion-item >
+      <h6 class="patient-name">{{ 'PROFILE.LAST_NAME' | translate }}</h6>
+      <h6 class="patient-name" slot="end">ANGEL</h6>
+    </ion-item>
+    <ion-item >
+      <h6 class="patient-name">{{ 'PROFILE.EMAIL' | translate }}</h6>
+      <h6 class="patient-name" slot="end">{{ 'PROFILE.YOUR_EMAIL' | translate }}</h6>
+    </ion-item>
+    <ion-item >
+      <h6 class="patient-name">{{ 'PROFILE.PHONE' | translate }}</h6>
+      <h6 class="patient-name" slot="end">{{ 'PROFILE.YOUR_PHONE' | translate }}</h6>
+    </ion-item>
+  
+</ion-grid>
+</ion-content>

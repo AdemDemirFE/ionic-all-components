@@ -44,7 +44,7 @@ export class AppComponent {
     },
     {
       name: 'Profile',
-      url: '/tabs/profile',
+      url: '/profile',
       icon: 'person'
     }
     ]

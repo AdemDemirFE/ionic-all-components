@@ -1,8 +1,10 @@
 {
+    "BACK":"Back",
 
     "PAGES":{
         "HOME":"Anasayfa",
-        "SEGMENT_BUTTON":"Segment Button"
+        "SEGMENT_BUTTON":"Segment Button",
+        "PROFILE":"PROFILE PAGE"
    },
    
    "SEGMENT":{
@@ -18,6 +20,13 @@
         "GIRIS":"GİRİŞ",
         "BENI_HATIRLA":"Beni Hatırla",
         "KULLANICI_GIRIS_HATA":"KULLANICI GIRIS HATA"
+    },
+    "PROFILE":{
+        "NAMESURNAME":"Name Surname",
+        "FIRST_NAME":"First Name",
+        "LAST_NAME":"Last Name",
+        "EMAIL":"Email",
+        "YOUR_EMAIL":"angel@angel.com",
+        "YOUR_PHONE":"0555 555 55 55"
     }
-    
 }

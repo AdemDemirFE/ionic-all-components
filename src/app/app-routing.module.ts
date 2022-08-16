@@ -16,6 +16,10 @@ const routes: Routes = [
   },  {
     path: 'segment-button',
     loadChildren: () => import('./pages/segment-button/segment-button.module').then( m => m.SegmentButtonPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
   }
 
 ];
