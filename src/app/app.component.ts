@@ -46,6 +46,11 @@ export class AppComponent {
       name: 'Profile',
       url: '/profile',
       icon: 'person'
+    },
+    {
+      name: 'Tiimeline',
+      url: '/timeline',
+      icon: 'time'
     }
     ]
   }
