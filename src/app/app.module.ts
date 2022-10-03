@@ -10,17 +10,27 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateConfigService } from 'src/translate-config.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TimelineComponent } from './timeline/timeline.component';
+import { TimelineTimeComponent } from './timeline/timeline.component';
+import { TimelineItemComponent } from './timeline/timeline.component';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    TimelineComponent,
+    TimelineItemComponent,
+    TimelineTimeComponent
+  ],
+  
   imports: [
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule,
     HttpClientModule,
+    
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

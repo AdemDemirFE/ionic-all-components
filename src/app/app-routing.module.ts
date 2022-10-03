@@ -20,6 +20,10 @@ const routes: Routes = [
   {
     path: 'profile',
     loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'timeline',
+    loadChildren: () => import('./pages/timeline/timeline.module').then( m => m.TimelinePageModule)
   }
 
 ];
