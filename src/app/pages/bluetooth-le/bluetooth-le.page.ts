@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgZone } from '@angular/core';
 import { BLE } from '@ionic-native/ble/ngx';
-import { LoadingController, Platform } from '@ionic/angular';
-
+import { LoadingController, Platform, NavController } from '@ionic/angular';
+import { DetailPage } from './detail/detail.page';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-bluetooth-le',
   templateUrl: './bluetooth-le.page.html',
@@ -14,8 +15,28 @@ export class BluetoothLEPage implements OnInit {
   constructor(
     private platform: Platform,
     private ble: BLE,
-    private loadingCrl: LoadingController
-  ) { }
+    private loadingCrl: LoadingController,
+    private ngZone: NgZone,
+    public navCtrl:NavController,
+    public router: Router
+    ) { }
+
+
+  Scan(){
+    this.devices = [];
+    this.ble.scan([],15).subscribe(
+      device => this.onDeviceDiscovered(device)
+    );
+  }
+  onDeviceDiscovered(device){
+    console.log('Discovered' + JSON.stringify(device,null,2));
+    this.ngZone.run(()=>{
+      this.devices.push(device)
+      console.log(device)
+    })
+  }
+
+
 
   ngOnInit() {
     this.platform.ready().then(() => {
@@ -43,4 +64,16 @@ export class BluetoothLEPage implements OnInit {
     });
   }
 
+
+  deviceSelected(device) {
+    console.log(JSON.stringify(device) + ' selected');
+    this.navCtrl.navigateForward('detail', { state: { device} } );
+  }
+
+
+  goToDetails(device) {
+    this.router.navigate(['/detail', device]);
+  }
+
+  
 }
