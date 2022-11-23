@@ -13,7 +13,8 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
-  },  {
+  },
+  {
     path: 'segment-button',
     loadChildren: () => import('./pages/segment-button/segment-button.module').then( m => m.SegmentButtonPageModule)
   },
@@ -24,6 +25,10 @@ const routes: Routes = [
   {
     path: 'timeline',
     loadChildren: () => import('./pages/timeline/timeline.module').then( m => m.TimelinePageModule)
+  },
+  {
+    path: 'bluetooth-le',
+    loadChildren: () => import('./pages/bluetooth-le/bluetooth-le.module').then( m => m.BluetoothLEPageModule)
   }
 
 ];

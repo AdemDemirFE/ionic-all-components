@@ -4,7 +4,8 @@
     "PAGES":{
         "HOME":"Anasayfa",
         "SEGMENT_BUTTON":"Segment Button",
-        "PROFILE":"PROFILE PAGE"
+        "PROFILE":"PROFILE PAGE",
+        "BLUETOOTH_LE":"BLUETOOTH LE"
    },
    
    "SEGMENT":{

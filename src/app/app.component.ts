@@ -51,6 +51,11 @@ export class AppComponent {
       name: 'Tiimeline',
       url: '/timeline',
       icon: 'time'
+    },
+    {
+      name: 'bluetooth',
+      url: '/bluetooth-le',
+      icon: 'time'
     }
     ]
   }
