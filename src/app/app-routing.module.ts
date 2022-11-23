@@ -29,7 +29,12 @@ const routes: Routes = [
   {
     path: 'bluetooth-le',
     loadChildren: () => import('./pages/bluetooth-le/bluetooth-le.module').then( m => m.BluetoothLEPageModule)
+  },
+  {
+    path: 'detail',
+    loadChildren: () => import('./pages/bluetooth-le/detail/detail.module').then( m => m.DetailPageModule)
   }
+
 
 ];
 @NgModule({
