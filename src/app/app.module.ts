@@ -13,6 +13,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TimelineComponent } from './timeline/timeline.component';
 import { TimelineTimeComponent } from './timeline/timeline.component';
 import { TimelineItemComponent } from './timeline/timeline.component';
+import { BLE } from '@ionic-native/ble/ngx';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
@@ -40,6 +41,7 @@ export function createTranslateLoader(http: HttpClient) {
     }),
   ],
   providers: [
+    BLE,
     TranslateConfigService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
