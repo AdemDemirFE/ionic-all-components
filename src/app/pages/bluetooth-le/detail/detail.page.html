@@ -1,10 +1,19 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>detail</ion-title>
+  <ion-toolbar style="--background: #3897E9; text-align: center;" >
+    <ion-buttons slot="start">
+      <ion-back-button text="{{'BACK' | translate}}" style="color: rgb(255, 255, 255);"></ion-back-button>
+    </ion-buttons>
+    <ion-button (click)="deviceDisconnect()" slot="end">
+      <ion-icon name="Bluetooth"></ion-icon>
+      <p>bağlantı sonlandır</p>
+    </ion-button>
+    <ion-title style="text-align: center;">
+      <a style="color: white;  font-size: 15px;">DETAY</a>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<!-- <ion-content class="padding">
+<ion-content class="padding">
   <ion-card>
     <ion-card-header>
       {{ peripheral.name || 'Unnamed' }}
@@ -26,18 +35,18 @@
     </ion-list>
   </ion-card>
 
-  <ion-card>
+  <!-- <ion-card>
     <ion-card-header>
       Details
     </ion-card-header>
     <ion-card-content>
       <pre>{{peripheral | json }}</pre>
     </ion-card-content>
-  </ion-card>
+  </ion-card> -->
 </ion-content>
 
 <ion-footer>
   <ion-toolbar>
     <p>{{ statusMessage }}</p>
   </ion-toolbar>
-</ion-footer> -->
+</ion-footer>
