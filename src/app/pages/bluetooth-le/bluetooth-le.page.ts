@@ -2,7 +2,7 @@ import { Component, OnInit, NgZone } from '@angular/core';
 import { BLE } from '@ionic-native/ble/ngx';
 import { LoadingController, Platform, NavController } from '@ionic/angular';
 import { DetailPage } from './detail/detail.page';
-import { Router } from '@angular/router';
+import { NavigationExtras, Router } from '@angular/router';
 @Component({
   selector: 'app-bluetooth-le',
   templateUrl: './bluetooth-le.page.html',
@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class BluetoothLEPage implements OnInit {
 
   devices: any[] = [];
-
+  bluetoothCheck = false;
   constructor(
     private platform: Platform,
     private ble: BLE,
@@ -21,49 +21,32 @@ export class BluetoothLEPage implements OnInit {
     public router: Router
     ) { }
 
-
-  Scan(){
-    this.devices = [];
-    this.ble.scan([],15).subscribe(
-      device => this.onDeviceDiscovered(device)
-    );
-  }
-  onDeviceDiscovered(device){
-    console.log('Discovered' + JSON.stringify(device,null,2));
-    this.ngZone.run(()=>{
-      this.devices.push(device)
-      console.log(device)
-    })
-  }
-
-
-
-  ngOnInit() {
-    this.platform.ready().then(() => {
-      if (this.platform.is('android') || this.platform.is('ios')) {
-        if (this.platform.is('android')) {
-          this.ble.enable().then(() => this.scan());
-        } else {
-          this.scan();
+    bluetoothScan() {
+      
+      this.platform.ready().then(() => {
+        if (this.platform.is('android') || this.platform.is('ios')) {
+          if (this.platform.is('android') && this.bluetoothCheck == true) {
+            this.ble.enable().then(() => this.scan());
+          } else {
+            this.scan();
+          }
         }
-      }
-    });
-  }
-
+      });
+    }
+  
   scan() {
-    console.log("sssas")
     debugger;
     this.loadingCrl.create({ message: 'Scanning...' }).then(loading => {
       loading.present();
-      console.log('Scanning...');
       this.ble.scan([], 5).subscribe(device => {
-        console.log(JSON.stringify(device));
         this.devices.push(device);
         loading.dismiss();
       });
     });
   }
 
+  ngOnInit() {
+  }
 
   deviceSelected(device) {
     console.log(JSON.stringify(device) + ' selected');
@@ -72,7 +55,13 @@ export class BluetoothLEPage implements OnInit {
 
 
   goToDetails(device) {
-    this.router.navigate(['/detail', device]);
+    debugger;
+    let navigationExtras: NavigationExtras = {
+      queryParams: {
+        device: device,
+      }
+    }
+    this.navCtrl.navigateForward('/detail', navigationExtras);
   }
 
   
