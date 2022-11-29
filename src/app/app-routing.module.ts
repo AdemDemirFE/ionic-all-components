@@ -33,7 +33,16 @@ const routes: Routes = [
   {
     path: 'detail',
     loadChildren: () => import('./pages/bluetooth-le/detail/detail.module').then( m => m.DetailPageModule)
+  },
+  {
+    path: 'pastry',
+    loadChildren: () => import('./pages/pastry/pastry.module').then( m => m.PastryPageModule)
+  },
+  {
+    path: 'bubble',
+    loadChildren: () => import('./pages/bubble/bubble.module').then( m => m.BubblePageModule)
   }
+
 
 
 ];
