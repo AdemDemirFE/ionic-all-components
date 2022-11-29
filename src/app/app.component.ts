@@ -56,6 +56,11 @@ export class AppComponent {
       name: 'bluetooth',
       url: '/bluetooth-le',
       icon: 'time'
+    },
+    {
+      name: 'pastry',
+      url: '/pastry',
+      icon: 'time'
     }
     ]
   }
