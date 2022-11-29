@@ -5,12 +5,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { BubblePage } from './bubble.page';
+import { FluidPage } from './fluid.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: BubblePage
+    component: FluidPage
   }
 ];
 
@@ -21,6 +21,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [BubblePage]
+  declarations: [FluidPage]
 })
-export class BubblePageModule {}
+export class FluidPageModule {}

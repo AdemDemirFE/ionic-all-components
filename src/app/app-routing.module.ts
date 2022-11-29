@@ -41,6 +41,10 @@ const routes: Routes = [
   {
     path: 'bubble',
     loadChildren: () => import('./pages/bubble/bubble.module').then( m => m.BubblePageModule)
+  },
+  {
+    path: 'fluid',
+    loadChildren: () => import('./pages/fluid/fluid.module').then( m => m.FluidPageModule)
   }
 
 
