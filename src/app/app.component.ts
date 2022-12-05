@@ -61,6 +61,16 @@ export class AppComponent {
       name: 'pastry',
       url: '/pastry',
       icon: 'time'
+    },
+    {
+      name: 'fluid',
+      url: '/fluid',
+      icon: 'time'
+    },
+    {
+      name: 'innAppBrowser',
+      url: '/in-app-browser',
+      icon: 'browser'
     }
     ]
   }
