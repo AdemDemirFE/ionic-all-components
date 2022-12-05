@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>inAppBrowser</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-button (click)="openWithSystemBrowser('https://www.techiediaries.com')">Open with System browser</ion-button>
+    <ion-button (click)="openWithInAppBrowser('https://www.techiediaries.com')">Open with In App browser</ion-button>
+    <ion-button (click)="openWithCordovaBrowser('https://www.techiediaries.com')">Open with Cordova browser</ion-button>
+</ion-content>

@@ -66,6 +66,11 @@ export class AppComponent {
       name: 'fluid',
       url: '/fluid',
       icon: 'time'
+    },
+    {
+      name: 'innAppBrowser',
+      url: '/in-app-browser',
+      icon: 'browser'
     }
     ]
   }

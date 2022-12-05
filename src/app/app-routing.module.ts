@@ -45,7 +45,12 @@ const routes: Routes = [
   {
     path: 'fluid',
     loadChildren: () => import('./pages/fluid/fluid.module').then( m => m.FluidPageModule)
+  },
+  {
+    path: 'in-app-browser',
+    loadChildren: () => import('./pages/in-app-browser/in-app-browser.module').then( m => m.InAppBrowserPageModule)
   }
+
 
 
 

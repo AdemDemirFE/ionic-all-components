@@ -20,6 +20,8 @@
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
     "@awesome-cordova-plugins/android-permissions": "^6.2.0",
+    "@awesome-cordova-plugins/core": "^6.2.0",
+    "@awesome-cordova-plugins/in-app-browser": "^6.2.0",
     "@ionic-native/android-permissions": "^5.36.0",
     "@ionic-native/ble": "^5.36.0",
     "@ionic-native/core": "^5.36.0",
@@ -52,6 +54,7 @@
     "cordova-plugin-android-permissions": "^1.1.4",
     "cordova-plugin-ble-central": "^1.6.1",
     "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-inappbrowser": "^5.0.0",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-ionic-webview": "^5.0.0",
     "cordova-plugin-splashscreen": "^5.0.2",
@@ -83,7 +86,8 @@
       "cordova-plugin-ble-central": {
         "ACCESS_BACKGROUND_LOCATION": "false"
       },
-      "cordova-plugin-android-permissions": {}
+      "cordova-plugin-android-permissions": {},
+      "cordova-plugin-inappbrowser": {}
     },
     "platforms": [
       "android"
