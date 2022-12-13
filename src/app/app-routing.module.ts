@@ -49,7 +49,12 @@ const routes: Routes = [
   {
     path: 'in-app-browser',
     loadChildren: () => import('./pages/in-app-browser/in-app-browser.module').then( m => m.InAppBrowserPageModule)
+  },
+  {
+    path: 'range',
+    loadChildren: () => import('./pages/range/range.module').then( m => m.RangePageModule)
   }
+
 
 
 
