@@ -71,6 +71,11 @@ export class AppComponent {
       name: 'innAppBrowser',
       url: '/in-app-browser',
       icon: 'browser'
+    },
+    {
+      name: 'Range',
+      url: '/range',
+      icon: 'browser'
     }
     ]
   }
