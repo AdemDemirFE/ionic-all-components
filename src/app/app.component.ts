@@ -76,6 +76,11 @@ export class AppComponent {
       name: 'Range',
       url: '/range',
       icon: 'browser'
+    },
+    {
+      name: 'soundTotext',
+      url: '/sound-to-text',
+      icon: 'browser'
     }
     ]
   }

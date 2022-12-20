@@ -53,7 +53,12 @@ const routes: Routes = [
   {
     path: 'range',
     loadChildren: () => import('./pages/range/range.module').then( m => m.RangePageModule)
+  },
+  {
+    path: 'sound-to-text',
+    loadChildren: () => import('./pages/sound-to-text/sound-to-text.module').then( m => m.SoundToTextPageModule)
   }
+
 
 
 
