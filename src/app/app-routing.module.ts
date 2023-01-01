@@ -57,7 +57,12 @@ const routes: Routes = [
   {
     path: 'sound-to-text',
     loadChildren: () => import('./pages/sound-to-text/sound-to-text.module').then( m => m.SoundToTextPageModule)
+  },
+  {
+    path: 'disease-diagnosis',
+    loadChildren: () => import('./pages/disease-diagnosis/disease-diagnosis.module').then( m => m.DiseaseDiagnosisPageModule)
   }
+
 
 
 
