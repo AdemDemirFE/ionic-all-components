@@ -31,6 +31,7 @@
     "@ionic/cordova-builders": "^7.0.0",
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
+    "@tensorflow/tfjs": "^4.1.0",
     "cordova-android": "10.1.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
