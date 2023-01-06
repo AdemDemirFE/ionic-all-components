@@ -35,7 +35,9 @@
     "cordova-android": "10.1.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
-    "zone.js": "~0.11.4"
+    "webdatarocks": "^1.4.7",
+    "zone.js": "~0.11.4",
+    "ng-webdatarocks": "^1.4.6"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.0.0",

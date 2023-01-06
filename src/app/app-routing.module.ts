@@ -61,7 +61,11 @@ const routes: Routes = [
   {
     path: 'disease-diagnosis',
     loadChildren: () => import('./pages/disease-diagnosis/disease-diagnosis.module').then( m => m.DiseaseDiagnosisPageModule)
+  },  {
+    path: 'web-data-rocks',
+    loadChildren: () => import('./web-data-rocks/web-data-rocks.module').then( m => m.WebDataRocksPageModule)
   }
+
 
 
 
