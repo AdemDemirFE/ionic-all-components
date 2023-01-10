@@ -64,6 +64,10 @@ const routes: Routes = [
   },  {
     path: 'web-data-rocks',
     loadChildren: () => import('./web-data-rocks/web-data-rocks.module').then( m => m.WebDataRocksPageModule)
+  },
+  {
+    path: 'sms-dogrula',
+    loadChildren: () => import('./sms-dogrula/sms-dogrula.module').then( m => m.SmsDogrulaPageModule)
   }
 
 
