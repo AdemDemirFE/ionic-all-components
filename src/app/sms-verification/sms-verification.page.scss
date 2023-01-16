@@ -1,0 +1,41 @@
+.smsInput {
+    text-align: center;
+    letter-spacing: 30px;
+    font-size: 24px;
+    border: none;
+    background: white;
+    align-items: center;
+}
+
+.background {
+    background: linear-gradient(90deg, #C7C5F4, #9ea5dc);
+}
+
+ion-card.card {
+    box-shadow: none;
+    background: linear-gradient(-205deg, #4b6aa9 50%, #5b79b5 50%);
+    border-radius: 5px;
+}
+
+ion-card-header.card-header {
+    color: #fff !important;
+    font-size: larger;
+}
+
+.login__submit {
+    background: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 16px 20px;
+    border-radius: 16px;
+    border: 2px solid #a8a7c6;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #4968a4;
+    box-shadow: 0px 2px 2px #0080ff;
+    //cursor: pointer;
+    transition: .2s;
+}

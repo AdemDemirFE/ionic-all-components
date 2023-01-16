@@ -68,6 +68,10 @@ const routes: Routes = [
   {
     path: 'sms-dogrula',
     loadChildren: () => import('./sms-dogrula/sms-dogrula.module').then( m => m.SmsDogrulaPageModule)
+  },
+  {
+    path: 'sms-verification',
+    loadChildren: () => import('./sms-verification/sms-verification.module').then( m => m.SmsVerificationPageModule)
   }
 
 

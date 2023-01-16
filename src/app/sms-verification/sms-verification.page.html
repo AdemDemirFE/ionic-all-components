@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      <span [ngStyle]="{'color': genelStyle_.YAZI_RENGI}">{{ 'GENEL.SMS_DOGRULA' | translate }}</span>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="Close()">
+        {{ 'MODALFORM.KAPAT' | translate }}
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="background">
+  <ion-row justify-content-center align-items-center style="margin-top:25%;">
+    <ion-card text-center style="max-width: 500px; max-height:400px;">
+      <ion-card-header>
+        {{ 'GENEL.SMS_DOGRULA' | translate }}
+      </ion-card-header>
+      <ion-card-content>
+        <form>
+          <ion-list no-line>
+            <ion-item style="border-radius: 12px;">
+              <ion-input placeholder="{{ 'GENEL.SMS_KODUNU_GIRINIZ' | translate }}" type="tel" maxlength="5"
+                [(ngModel)]="smsCode" name="smsCode" class="smsInput">
+              </ion-input>
+            </ion-item>
+            <button ion-button (click)="smsCodeControl()" class="login__submit" block>
+              <ion-icon ios="ios-chechkmark" md="md-chechkmark"></ion-icon>&nbsp;  {{ 'GENEL.DOGRULA' | translate }}
+            </button>
+          </ion-list>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </ion-row>
+</ion-content>
