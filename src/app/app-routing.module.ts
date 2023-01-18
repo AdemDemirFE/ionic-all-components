@@ -59,13 +59,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/sound-to-text/sound-to-text.module').then( m => m.SoundToTextPageModule)
   },
   {
-    path: 'disease-diagnosis',
-    loadChildren: () => import('./pages/disease-diagnosis/disease-diagnosis.module').then( m => m.DiseaseDiagnosisPageModule)
-  },  {
-    path: 'web-data-rocks',
-    loadChildren: () => import('./web-data-rocks/web-data-rocks.module').then( m => m.WebDataRocksPageModule)
-  },
-  {
     path: 'sms-dogrula',
     loadChildren: () => import('./sms-dogrula/sms-dogrula.module').then( m => m.SmsDogrulaPageModule)
   },
