@@ -40,7 +40,7 @@ export class AppComponent {
     {
       name: 'Ion Card',
       url: '/ion-card',
-      icon: 'key'
+      icon: 'apps'
     },
     {
       name: 'Profile',
@@ -50,22 +50,22 @@ export class AppComponent {
     {
       name: 'Tiimeline',
       url: '/timeline',
-      icon: 'time'
+      icon: 'apps'
     },
     {
       name: 'bluetooth',
       url: '/bluetooth-le',
-      icon: 'time'
+      icon: 'apps'
     },
     {
       name: 'pastry',
       url: '/pastry',
-      icon: 'time'
+      icon: 'apps'
     },
     {
       name: 'fluid',
       url: '/fluid',
-      icon: 'time'
+      icon: 'apps'
     },
     {
       name: 'innAppBrowser',
@@ -75,12 +75,17 @@ export class AppComponent {
     {
       name: 'Range',
       url: '/range',
-      icon: 'browser'
+      icon: 'apps'
     },
     {
       name: 'soundTotext',
       url: '/sound-to-text',
-      icon: 'browser'
+      icon: 'apps'
+    },
+    {
+      name: 'buttons',
+      url: '/buttons',
+      icon: 'apps'
     }
     ]
   }
