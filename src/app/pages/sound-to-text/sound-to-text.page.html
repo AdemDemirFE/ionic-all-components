@@ -1,9 +1,43 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>soundToText</ion-title>
+  <ion-toolbar style="--background: #3897E9; text-align: center;" >
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu" style="color:white" ></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="text-align: center;">
+      <a style="color: white;  font-size: 15px;">Konuş</a>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
 
+
+  <ion-button color="dark" expand="full" (click)="checkPermission()">Check Permission</ion-button><br />
+  <ion-button color="dark" expand="full" (click)="requestPermission()">Request Permission</ion-button><br />
+  <ion-button color="dark" expand="full" (click)="startListening2()">Start Listening2</ion-button><br />
+
+
+
+  <ion-item>
+    <ion-label stacked>Text</ion-label>
+    <ion-textarea rows="4" [(ngModel)]="text" (ionChange)="onChange(text)"></ion-textarea>
+  </ion-item>
+  <ion-card>
+    <ion-fab right top>
+      <ion-button (click)="startListening()" ion-fab [color]="isRecording ? 'danger' : 'secondary'"> strt 1
+        <ion-icon name="mic"></ion-icon>
+      </ion-button>
+    </ion-fab>
+  </ion-card>
+
+  <ion-list *ngIf="!istext">
+    <ion-list-header *ngIf="isRecording1">
+      This is what I understood...
+    </ion-list-header>
+    <ion-item *ngFor="let match of matches" (click)="sayText(match)" text-wrap>
+      {{ match }}
+    </ion-item>
+  </ion-list>
+
+  <ion-button block [color]="isRecording ? 'danger' : 'secondary'" (click)="startListening()">Play</ion-button>
+  <ion-button block [color]="isRecording ? 'secondary' : 'danger'"  (click)="stopListening()" *ngIf="isIos()">Stop Sound</ion-button>
 </ion-content>

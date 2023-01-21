@@ -28,6 +28,8 @@
     "@ionic-native/device": "^5.36.0",
     "@ionic-native/media": "^5.36.0",
     "@ionic-native/sms": "^5.36.0",
+    "@ionic-native/speech-recognition": "^5.36.0",
+    "@ionic-native/text-to-speech": "^5.36.0",
     "@ionic/angular": "^6.1.9",
     "@ionic/cordova-builders": "^7.0.0",
     "@ngx-translate/core": "^14.0.0",
@@ -61,8 +63,10 @@
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-ionic-webview": "^5.0.0",
     "cordova-plugin-media": "^6.1.0",
+    "cordova-plugin-speechrecognition": "^1.2.0",
     "cordova-plugin-splashscreen": "^5.0.2",
     "cordova-plugin-statusbar": "^2.4.2",
+    "cordova-plugin-tts": "^0.2.3",
     "eslint": "^7.6.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsdoc": "30.7.6",
@@ -92,7 +96,9 @@
       },
       "cordova-plugin-android-permissions": {},
       "cordova-plugin-inappbrowser": {},
-      "cordova-plugin-media": {}
+      "cordova-plugin-media": {},
+      "cordova-plugin-speechrecognition": {},
+      "cordova-plugin-tts": {}
     },
     "platforms": [
       "android"
