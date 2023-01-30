@@ -65,7 +65,12 @@ const routes: Routes = [
   {
     path: 'sms-verification',
     loadChildren: () => import('./sms-verification/sms-verification.module').then( m => m.SmsVerificationPageModule)
+  },
+  {
+    path: 'gauge-examples',
+    loadChildren: () => import('./pages/gauge-examples/gauge-examples.module').then( m => m.GaugeExamplesPageModule)
   }
+
 
 
 

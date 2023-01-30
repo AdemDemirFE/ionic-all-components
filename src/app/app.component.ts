@@ -81,6 +81,11 @@ export class AppComponent {
       name: 'soundTotext',
       url: '/sound-to-text',
       icon: 'browser'
+    },
+    {
+      name: 'gauge',
+      url: '/gauge-examples',
+      icon: 'browser'
     }
     ]
   }
