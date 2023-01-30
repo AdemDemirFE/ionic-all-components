@@ -11,7 +11,11 @@ import More from 'highcharts/highcharts-more';
   styleUrls: ['./high-charts.page.scss'],
 })
 export class HighChartsPage {
-  constructor() { }
+  data:any = 0;
+
+  constructor() { 
+    this.data = 10;
+  }
 
   ionViewDidEnter() {
     this.barChartPopulation();
@@ -21,6 +25,9 @@ export class HighChartsPage {
 
   barChartPopulation() {
     HighCharts.chart('barChart', {
+      credits: {
+        enabled: false
+      },
       chart: {
         type: 'bar'
       },
@@ -69,6 +76,9 @@ export class HighChartsPage {
 
   pieChartBrowser() {
     HighCharts.chart('pieChart', {
+      credits: {
+        enabled: false
+      },
       chart: {
         plotBackgroundColor: null,
         plotBorderWidth: null,
@@ -107,23 +117,8 @@ export class HighChartsPage {
           name: 'Firefox',
           y: 10.85
         }, {
-          name: 'Edge',
-          y: 4.67
-        }, {
-          name: 'Safari',
-          y: 4.18
-        }, {
-          name: 'Sogou Explorer',
-          y: 1.64
-        }, {
-          name: 'Opera',
-          y: 1.6
-        }, {
-          name: 'QQ',
-          y: 1.2
-        }, {
           name: 'Other',
-          y: 2.61
+          y: this.data
         }]
       }]
     });
