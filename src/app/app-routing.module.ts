@@ -69,7 +69,17 @@ const routes: Routes = [
   {
     path: 'gauge-examples',
     loadChildren: () => import('./pages/gauge-examples/gauge-examples.module').then( m => m.GaugeExamplesPageModule)
+  },
+  {
+    path: 'gauge2',
+    loadChildren: () => import('./pages/gauge-examples/gauge2/gauge2.module').then( m => m.Gauge2PageModule)
+  },
+  {
+    path: 'high-charts',
+    loadChildren: () => import('./pages/high-charts/high-charts.module').then( m => m.HighChartsPageModule)
   }
+
+
 
 
 

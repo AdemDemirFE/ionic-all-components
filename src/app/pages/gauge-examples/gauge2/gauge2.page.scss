@@ -1,0 +1,398 @@
+
+
+@media only screen and (max-width: 500px) {
+
+    .timer-group {
+      height: 200px;
+      margin: 0 auto;
+      position: relative;
+      width: 200px;
+      margin-top: 5px;
+    }
+    
+    .timer {
+      border-radius: 50%;
+      height: 50px;
+      overflow: hidden;
+      position: absolute;
+      width: 10px;
+    
+    }
+     
+    .timer:after {
+      background: #444950;
+      border-radius: 100%;
+      content: "";
+      display: block;
+      height: 40px;
+      left: 10px;
+      position: absolute;
+      width: 40px;
+    }
+    
+    .timer .hand {
+      float: left;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      width: 50%;
+    }
+    
+    .timer .hand ion-label {
+      border: 10px solid rgba(0, 255, 255, .4);
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-radius: 50%;
+      display: block;
+      height: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: rotate(225deg);
+      width: 0;
+    }
+    
+    .timer .hand:first-child {
+      transform: rotate(180deg);
+    }
+    
+    .timer .hand ion-label {
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    
+    .timer .hand:first-child ion-label {
+      animation-name: spin1;
+    }
+    
+    .timer .hand:last-child ion-label {
+      animation-name: spin2; 
+    }
+    
+    .timer.hour {
+      background:rgb(27, 27, 27);
+      height: 200px;
+      left: 0;
+      width: 200px;
+      top: 0;
+      box-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+    
+    }
+    
+    :root{
+      --duration: 20s
+    }
+    .timer.hour .hand ion-label {
+      animation-duration: mask calc(var(--duration) *1s);
+      border-top-color: rgb(65, 184, 131);
+      border-right-color: rgb(65, 184, 131);
+      border-width: 100px;
+    }
+    
+    .timer.hour:after {
+      height: 180px;
+      left: 10px;
+      width: 180px;
+      top: 10px;
+    }
+    
+    .timer.minute {
+      background: rgba(0, 0, 0, .2);
+      height: 150px;
+      left: 25px;
+      width: 150px;
+      top: 25px;
+    }
+    
+    .timer.minute .hand ion-label {
+      animation-duration: 60s;
+      border-top-color: rgba(0, 255, 255, .4);
+      border-right-color: rgba(0, 255, 255, .4);
+      border-width: 160px;
+    }
+    
+    .timer.minute:after {
+      width: 180px;
+      left: 10px;
+      height: auto;
+      top: 10px;
+    }
+    
+    .timer.second {
+      background: rgba(0, 0, 0, .2);
+      height: 150px;
+      left: 25px;
+      width: 150px;
+      top: 25px;
+    }
+    
+    .timer.second .hand ion-label {
+      animation-duration: 1s;
+      border-top-color: #399645;
+      border-right-color: #399645;
+      border-width: 75px;
+    }
+    
+    .timer.second:after {
+      height: 148px;
+      left: 1px;
+      width: 148px;
+      top: 1px;
+    }
+    
+    .face {
+      font-family: 'Share Tech Mono', monospace;
+      color: #ffffff;
+      border-radius: 50%;
+      height:100%;
+      width:100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 0 0 30px rgba(10, 175, 230, 1),  0 0 30px rgba(10, 175, 230, 0);
+      flex-direction: column;
+      text-align: center;;
+      line-height: 1em;
+      .p1 {
+        font-size: 15px;
+        width: 150px;
+        margin-top: 25px;
+      }
+      .p2 {
+        margin-top: 10px;
+        font-size: 15px;
+        width: 150px;
+      }
+      .icon {
+        width: 150px;
+        height: 50px;
+      }
+    }
+  }
+  
+  
+  @media only screen and (min-width: 500px) {
+    .timer-group {
+      height: 400px;
+      margin: 0 auto;
+      position: relative;
+      width: 400px;
+      margin-top: 10px;
+    }
+    
+    .timer {
+      border-radius: 50%;
+      height: 100px;
+      overflow: hidden;
+      position: absolute;
+      width: 20px;
+    
+    }
+     
+    .timer:after {
+      background: #444950;
+      border-radius: 100%;
+      content: "";
+      display: block;
+      height: 80px;
+      left: 20px;
+      position: absolute;
+      width: 80px;
+    }
+    
+    .timer .hand {
+      float: left;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      width: 50%;
+    }
+    
+    .timer .hand ion-label {
+      border: 10px solid rgba(0, 255, 255, .4);
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-radius: 50%;
+      display: block;
+      height: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: rotate(225deg);
+      width: 0;
+    }
+    
+    .timer .hand:first-child {
+      transform: rotate(180deg);
+    }
+    
+    .timer .hand ion-label {
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    
+    .timer .hand:first-child ion-label {
+      animation-name: spin1;
+    }
+    
+    .timer .hand:last-child ion-label {
+      animation-name: spin2; 
+    }
+    
+    .timer.hour {
+      background:rgb(27, 27, 27);
+      height: 400px;
+      left: 0;
+      width: 400px;
+      top: 0;
+      box-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+    
+    }
+    
+    :root{
+      --duration: 20s
+    }
+    .timer.hour .hand ion-label {
+      //animation-duration: mask calc(var(--duration) *1s);
+      border-top-color: rgb(65, 184, 131);
+      border-right-color: rgb(65, 184, 131);
+      border-width: 200px;
+    }
+    
+    .timer.hour:after {
+      height: 360px;
+      left: 20px;
+      width: 360px;
+      top: 20px;
+    }
+    
+    .timer.minute {
+      background: rgba(0, 0, 0, .2);
+      height: 350px;
+      left: 24px;
+      width: 350px;
+      top: 24px;
+    }
+    
+    .timer.minute .hand ion-label {
+      animation-duration: 60s;
+      border-top-color: rgba(0, 255, 255, .4);
+      border-right-color: rgba(0, 255, 255, .4);
+      border-width: 330px;
+    }
+    
+    .timer.minute:after {
+      width: 360px;
+      left: 20px;
+      height: auto;
+      top: 20px;
+    }
+    
+    .timer.second {
+      background: rgba(0, 0, 0, .2);
+      height: 300px;
+      left: 50px;
+      width: 300px;
+      top: 50px;
+    }
+    
+    .timer.second .hand ion-label {
+      animation-duration: 1s;
+      border-top-color: #399645;
+      border-right-color: #399645;
+      border-width: 150px;
+    }
+    
+    .timer.second:after {
+      height: 296px;
+      left: 2px;
+      width: 296px;
+      top: 2px;
+    }
+    
+    .face {
+      font-family: 'Share Tech Mono', monospace;
+      color: #ffffff;
+      border-radius: 50%;
+      height:100%;
+      width:100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 0 0 30px rgba(10, 175, 230, 1),  0 0 30px rgba(10, 175, 230, 0);
+      flex-direction: column;
+      text-align: center;
+      line-height: 1em;
+      .p1 {
+         font-size: 32px;
+         width: 350px;
+         margin-top: 35px;
+      }
+      .p2 {
+        font-size: 36px; 
+        width: 350px;
+        margin-top: 10px;
+      }
+      .icon {
+         width: 350px; 
+         height: 100px;
+      }
+    }
+   
+  }
+  
+
+
+
+
+
+
+
+  body {
+    background: #666;
+  }
+  
+  .container {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+  
+  .gauge {
+    width: 100%;
+    max-width: 350px;
+    max-height: 350px;
+    min-width: 250px;
+    min-height: 250px;
+    padding: 0;
+    border: 1px solid #666;
+    background: #F8F8F8;
+  }
+  
+  .gauge-data {
+    text-align: center;
+    color: #666;
+    display: block;
+  }
+  
+  .gauge-data > * {
+    display: block;
+  }
+  
+  .gauge-value {
+    font-size: 3em;
+  }
+  
+  .gauge-text {
+    font-size: 1.0em;
+    font-weigt: normal;
+    margin-top: 10px;
+  }
+  
+  .gauge-unit {
+    margin-top: 5px;
+    font-size: .9em;
+  }
+  

@@ -70,22 +70,32 @@ export class AppComponent {
     {
       name: 'innAppBrowser',
       url: '/in-app-browser',
-      icon: 'browser'
+      icon: 'star'
     },
     {
       name: 'Range',
       url: '/range',
-      icon: 'browser'
+      icon: 'star'
     },
     {
       name: 'soundTotext',
       url: '/sound-to-text',
-      icon: 'browser'
+      icon: 'star'
     },
     {
       name: 'gauge',
       url: '/gauge-examples',
-      icon: 'browser'
+      icon: 'star'
+    },
+    {
+      name: 'gauge2',
+      url: '/gauge2',
+      icon: 'star'
+    },
+    {
+      name: 'highCharts',
+      url: '/high-charts',
+      icon: 'star'
     }
     ]
   }

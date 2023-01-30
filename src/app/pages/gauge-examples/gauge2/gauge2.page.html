@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar style="--background: #3897E9; text-align: center;" >
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu" style="color:white" ></ion-menu-button>
+    </ion-buttons>
+    <ion-title>gauge2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item style="text-align: center; font-size: 26px; margin-bottom: 10px;" lines="none">
+    <ion-label class="ion-text-wrap">test</ion-label>
+  </ion-item>
+  <div class="timer-group" (click)="timeClick()">
+    <div class="timer hour">
+      <div class="hand"><ion-label [ngStyle]="{'animation-duration' : 180 + 's' }"></ion-label></div>
+      <div class="hand"><ion-label [ngStyle]="{'animation-duration' : 180 + 's' }"></ion-label></div>
+    </div>
+    <!-- <div class="timer minute">
+    </div>  -->
+    <div class="timer second">
+      <div class="hand"><ion-label></ion-label></div>
+      <div class="hand"><ion-label></ion-label></div>
+    </div>
+    <div class="face">
+      <p class="p1">aaa</p>  
+      <p class="p2">10:22:22</p>  
+      <ion-icon class="icon" name="videocam-outline"></ion-icon>
+    </div>
+  </div>
+
+
+</ion-content>
+
+
