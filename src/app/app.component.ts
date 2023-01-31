@@ -96,6 +96,11 @@ export class AppComponent {
       name: 'highCharts',
       url: '/high-charts',
       icon: 'star'
+    },
+    {
+      name: 'highCharts2',
+      url: '/high-charts2',
+      icon: 'star'
     }
     ]
   }
