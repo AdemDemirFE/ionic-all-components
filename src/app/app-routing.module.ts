@@ -85,7 +85,14 @@ const routes: Routes = [
   {
     path: 'high-charts3',
     loadChildren: () => import('./pages/high-charts/high-charts3/high-charts3.module').then( m => m.HighCharts3PageModule)
+  },
+
+  {
+    path: 'high-charts1',
+    loadChildren: () => import('./pages/high-charts/high-charts1/high-charts1.module').then( m => m.HighCharts1PageModule)
   }
+
+
 
 
 
