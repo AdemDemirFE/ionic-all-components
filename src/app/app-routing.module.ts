@@ -90,7 +90,12 @@ const routes: Routes = [
   {
     path: 'high-charts1',
     loadChildren: () => import('./pages/high-charts/high-charts1/high-charts1.module').then( m => m.HighCharts1PageModule)
+  },
+  {
+    path: 'video-capture',
+    loadChildren: () => import('./pages/video-capture/video-capture.module').then( m => m.VideoCapturePageModule)
   }
+
 
 
 

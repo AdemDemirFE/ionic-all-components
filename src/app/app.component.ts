@@ -111,6 +111,11 @@ export class AppComponent {
       name: 'highCharts1',
       url: '/high-charts1',
       icon: 'star'
+    },
+    {
+      name: 'video-capture',
+      url: '/video-capture',
+      icon: 'star'
     }
     ]
   }

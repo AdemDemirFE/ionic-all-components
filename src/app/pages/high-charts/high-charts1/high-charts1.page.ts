@@ -92,8 +92,5 @@ export class HighCharts1Page {
       }
   
   });
-
-
-    
   }
 }
