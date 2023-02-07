@@ -116,6 +116,11 @@ export class AppComponent {
       name: 'video-capture',
       url: '/video-capture',
       icon: 'star'
+    },
+    {
+      name: 'timeline2',
+      url: '/timeline2',
+      icon: 'star'
     }
     ]
   }

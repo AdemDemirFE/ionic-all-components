@@ -94,7 +94,12 @@ const routes: Routes = [
   {
     path: 'video-capture',
     loadChildren: () => import('./pages/video-capture/video-capture.module').then( m => m.VideoCapturePageModule)
+  },
+  {
+    path: 'timeline2',
+    loadChildren: () => import('./pages/timeline2/timeline2.module').then( m => m.Timeline2PageModule)
   }
+
 
 
 
