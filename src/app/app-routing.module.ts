@@ -98,7 +98,12 @@ const routes: Routes = [
   {
     path: 'timeline2',
     loadChildren: () => import('./pages/timeline2/timeline2.module').then( m => m.Timeline2PageModule)
+  },
+  {
+    path: 'barcode-scanner',
+    loadChildren: () => import('./pages/barcode-scanner/barcode-scanner.module').then( m => m.BarcodeScannerPageModule)
   }
+
 
 
 

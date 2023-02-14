@@ -121,6 +121,11 @@ export class AppComponent {
       name: 'timeline2',
       url: '/timeline2',
       icon: 'star'
+    },
+    {
+      name: 'Barcode Scan',
+      url: '/barcode-scanner',
+      icon: 'star'
     }
     ]
   }
