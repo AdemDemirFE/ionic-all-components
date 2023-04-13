@@ -102,7 +102,17 @@ const routes: Routes = [
   {
     path: 'barcode-scanner',
     loadChildren: () => import('./pages/barcode-scanner/barcode-scanner.module').then( m => m.BarcodeScannerPageModule)
+  },
+  {
+    path: 'wifi-wizard2',
+    loadChildren: () => import('./pages/wifi-wizard2/wifi-wizard2.module').then( m => m.WifiWizard2PageModule)
+  },
+  {
+    path: 'web-data-rocks',
+    loadChildren: () => import('./pages/web-data-rocks/web-data-rocks.module').then( m => m.WebDataRocksPageModule)
   }
+
+
 
 
 
