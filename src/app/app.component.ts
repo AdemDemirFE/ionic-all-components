@@ -131,6 +131,11 @@ export class AppComponent {
       name: 'Wifi Wizard2',
       url: '/wifi-wizard2',
       icon: 'wifi'
+    },
+    {
+      name: 'Web Data Rocks',
+      url: '/web-data-rocks',
+      icon: 'globe'
     }
     ]
   }
