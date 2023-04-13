@@ -24,6 +24,7 @@
     "@awesome-cordova-plugins/barcode-scanner": "^6.3.0",
     "@awesome-cordova-plugins/core": "^6.2.0",
     "@awesome-cordova-plugins/in-app-browser": "^6.2.0",
+    "@awesome-cordova-plugins/network": "^6.3.0",
     "@ionic-native/android-permissions": "^5.36.0",
     "@ionic-native/barcode-scanner": "^5.36.0",
     "@ionic-native/ble": "^5.36.0",
@@ -31,8 +32,10 @@
     "@ionic-native/core": "^5.36.0",
     "@ionic-native/device": "^5.36.0",
     "@ionic-native/media": "^5.36.0",
+    "@ionic-native/network": "^5.36.0",
     "@ionic-native/sms": "^5.36.0",
     "@ionic-native/video-capture-plus": "^4.20.0",
+    "@ionic-native/wifi-wizard-2": "^5.36.0",
     "@ionic/angular": "^6.1.9",
     "@ionic/cordova-builders": "^7.0.0",
     "@ngx-translate/core": "^14.0.0",
@@ -69,9 +72,12 @@
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-ionic-webview": "^5.0.0",
     "cordova-plugin-media": "^6.1.0",
+    "cordova-plugin-network-information": "^3.0.0",
     "cordova-plugin-splashscreen": "^5.0.2",
     "cordova-plugin-statusbar": "^2.4.2",
     "cordova-plugin-video-capture-plus": "^1.0.0",
+    "cordova-plugin-wifiwizard2": "^3.1.1",
+    "es6-promise-plugin": "^4.1.0",
     "eslint": "^7.6.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsdoc": "30.7.6",
@@ -106,7 +112,9 @@
       "cordova-plugin-android-permissions": {},
       "cordova-plugin-inappbrowser": {},
       "cordova-plugin-media": {},
-      "cordova-plugin-camera": {}
+      "cordova-plugin-camera": {},
+      "wifiwizard2": {},
+      "cordova-plugin-network-information": {}
     },
     "platforms": [
       "android"

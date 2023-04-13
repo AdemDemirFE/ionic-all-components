@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Device Wi-Fi Connect
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let wifi of wifiList" (click)="connectToWifi(wifi)">
+      {{ wifi.SSID }}
+    </ion-item>
+  </ion-list>
+  <ion-button (click)="scanWifi()">Scan Wi-Fi</ion-button>
+</ion-content>

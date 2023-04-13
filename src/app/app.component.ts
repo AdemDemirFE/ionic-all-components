@@ -126,6 +126,11 @@ export class AppComponent {
       name: 'Barcode Scan',
       url: '/barcode-scanner',
       icon: 'star'
+    },
+    {
+      name: 'Wifi Wizard2',
+      url: '/wifi-wizard2',
+      icon: 'wifi'
     }
     ]
   }
